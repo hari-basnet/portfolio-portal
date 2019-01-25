@@ -1,0 +1,73 @@
+  
+  /* ===header=== */
+  header div {
+    border: 2px solid purple;
+    display: inline-block;
+}
+img{
+    width: 42%;
+    height: 168px;
+    border-radius: 4px;
+}
+
+.head-wrapper{
+    display: flex;
+}
+.box-1{
+    flex: 2;
+    height: 180px;
+    border: 4px solid purple;
+}
+
+.box-2{
+    flex: 1;
+    height: 180px;
+    border: 4px solid purple;
+       
+}
+
+.box-3{
+    flex: 2;
+    height: 180px;
+    border: 4px solid purple;
+}
+
+.header-nav li {
+    display: inline-block;
+    margin-right: 10%;
+    list-style: none;
+}
+
+.header-nav li a {
+    text-decoration: none;
+}
+
+/* === body === */
+
+span{
+text-decoration-color: blue;
+}
+
+/* === footer=== */
+
+footer{
+
+background-color: lightblue;
+}
+
+button{
+background-color: greenyellow ;
+height: 50px;
+width: 120px;
+font-size: 18px;
+}
+
+table{
+width: 80%;
+margin: auto;
+}
+table, td, th {
+border: 2px solid purple;
+border-collapse: collapse;
+}
+
