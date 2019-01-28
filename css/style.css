@@ -3,18 +3,12 @@
     background-color: blanchedalmond;
   }
   /* ===header=== */
-header div {
+
+header div{
     display: inline-block;
 }
-img{
-    width: 42%;
-    height: 168px;
-    border-radius: 10px;
-}
 
-b{
-    font-size: 46px;;
-}
+
 
 .head-wrapper{
     display: flex;
@@ -23,20 +17,27 @@ b{
     flex: 1;
     justify-content: center;
     margin-top: 2%;
+    height: auto;
+    width: 70%;
 
 }
 .box-1 img{
-    height: 213px;
-    width: 70%; 
+    width: 42%;
+    height: 168px;
+    border-radius: 10px;
+    
 }
 
 .box-2{
     flex: 1;
-    height: 180px;
+    height: 180px; 
     align-items: center;         
-    justify-content: center;  
-    margin-top: 5%;
-    margin-left: 5%;
+    justify-content: center;
+    
+}
+.box-2 h1 h3{
+    
+    margin: auto;
 }
 
 .box-3{
@@ -53,7 +54,7 @@ b{
 }
 
 .header-nav{
-    background-image: linear-gradient(to bottom right, lightblue, grey);
+    background-color: #333;
  
 }
 
@@ -70,33 +71,109 @@ b{
     font-size: 23px;
     font-weight: 200;
     padding: 5px;
+    color: aliceblue;
+    
+}
+.header-nav li a:hover {
+    background-color: #111;
+
     
 }
 
 /* === body === */
 
-span{
-text-decoration-color: blue;
+
+.body-container{
+    display: flex;
+    flex-direction: column; 
 }
 
-section{
+.body-container div{
     height: 100px;
     text-overflow: inherit;
-    background-color:  #e1e1ea;
-    border-radius: 2%;
-    display: flex;
-    align-items: center;
-    margin-left: 5px;
+    background-color: lightgray;
+    overflow-wrap: normal;
+    margin: 5px;;
+
+}
+
+.part-1{
+
+    
+}
+
+.part-2{
+
     
 
 }
+
+.part-3{
+
+}
+
+/* this css is for skills.html */
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main img
+{
+    height: 180px;
+    width: 180px;
+}
+
+main div{
+    background-color: lightgray;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    flex-wrap: wrap;
+
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .card-container {
+    padding: 2px 16px;
+    overflow: hidden;
+  }
+
+
+
+/* this css is for skills.html */
+
 
 /* === footer=== */
 
 footer{
 
-background-color: lightblue;
+    background-color: lightblue;
+    height: 125px;
+    width: 100%;
+    position: absolute;
 
+}
+
+footer li {
+    display: inline-block;
+        margin: 3%;
+       
+    
+}
+
+footer a{
+    text-decoration: none;
+  
 }
 
 
