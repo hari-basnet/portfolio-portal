@@ -1,7 +1,7 @@
   html{
 
-/*     background-image: url(http://www.htmldrive.net/edit_media/2011/201107/20110719/Full-background-webdevtuts/images/image1.jpg);
- */    background-repeat:repeat;
+     background-image: url(http://www.htmldrive.net/edit_media/2011/201107/20110719/Full-background-webdevtuts/images/image1.jpg);
+    background-repeat:repeat;
     height: 100%;
     width: 100%;
   }
@@ -28,8 +28,8 @@ header div{
 
 }
 .box-1 img{
-    width: 42%;
-    height: 168px;
+/*     width: 42%;
+ */    height: 168px;
     border-radius: 10px;
     
 }
