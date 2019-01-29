@@ -1,7 +1,5 @@
   html{
 
-     background-image: url(http://www.htmldrive.net/edit_media/2011/201107/20110719/Full-background-webdevtuts/images/image1.jpg);
-    background-repeat:repeat;
     height: 100%;
     width: 100%;
   }
@@ -9,7 +7,8 @@
   /* ===header=== */
 
 header div{
-    display: inline-block;
+    background-image: url(http://www.htmldrive.net/edit_media/2011/201107/20110719/Full-background-webdevtuts/images/image1.jpg);
+
 }
 
 
@@ -28,8 +27,8 @@ header div{
 
 }
 .box-1 img{
-/*     width: 42%;
- */    height: 168px;
+    margin-left: auto;
+    height: 168px;
     border-radius: 10px;
     
 }
@@ -37,26 +36,21 @@ header div{
 .box-2{
     flex: 1;
     height: 180px; 
-    align-items: center;         
-    justify-content: center;
     
 }
 
 .box-3{
     flex: 1;
     height: 180px;
-    margin-top: 3%;
-
 }
 
 .box-3 img{
-    height: auto;
-    width: auto;
-    float: right;
+    margin-top: 100px;
+    margin-left: 150px;    
 }
 
 .header-nav{
-    background-color: #333;
+    background-color:   #042B50;
  
 }
 
@@ -77,7 +71,7 @@ header div{
     
 }
 .header-nav li a:hover {
-    background-color: #111;
+    background-color: #196FA0;
 
     
 }
@@ -94,7 +88,7 @@ header div{
 .body-container div{
     height: 100px;
     text-overflow: inherit;
-    background-color: rgba(11, 127, 243, 0.1);
+    background-color: rgba(11, 127, 243, 0.3);
     overflow-wrap: normal;
     margin: 5px;;
 
@@ -175,6 +169,26 @@ main div{
 
 /* this css is for skills.html */
 
+/* === CONTACT HTML CONTACT HTML CONTACT HTML CONTACT HTML CONTACT HTML CONTACT HTML====== */
+
+.form-body h1{
+    color: darkcyan;
+}
+
+.form-body label{
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+
+}
+
+.form-body form input{
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+}
+/* === CONTACT HTML CONTACT HTML CONTACT HTML CONTACT HTML CONTACT HTML CONTACT HTML=== */
+
 
 /* === footer=== */
 
@@ -183,13 +197,11 @@ footer{
     background-color: lightblue;
     height: 125px;
     width: 100%;
-    position: absolute;
-
 }
 
 footer li {
     display: inline-block;
-        margin: 3%;
+    margin: 3%;
        
     
 }
