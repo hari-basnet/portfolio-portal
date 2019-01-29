@@ -1,7 +1,11 @@
   html{
 
-    background-color: blanchedalmond;
+/*     background-image: url(http://www.htmldrive.net/edit_media/2011/201107/20110719/Full-background-webdevtuts/images/image1.jpg);
+ */    background-repeat:repeat;
+    height: 100%;
+    width: 100%;
   }
+
   /* ===header=== */
 
 header div{
@@ -9,10 +13,12 @@ header div{
 }
 
 
-
+/* === This block of code makes the header container div === */
 .head-wrapper{
     display: flex;
 }
+
+/* === Child div of he head-wrapper === */
 .box-1{
     flex: 1;
     justify-content: center;
@@ -34,10 +40,6 @@ header div{
     align-items: center;         
     justify-content: center;
     
-}
-.box-2 h1 h3{
-    
-    margin: auto;
 }
 
 .box-3{
@@ -79,6 +81,7 @@ header div{
 
     
 }
+/* === header up from here === */
 
 /* === body === */
 
@@ -91,7 +94,7 @@ header div{
 .body-container div{
     height: 100px;
     text-overflow: inherit;
-    background-color: lightgray;
+    background-color: rgba(11, 127, 243, 0.1);
     overflow-wrap: normal;
     margin: 5px;;
 
@@ -126,7 +129,7 @@ main img
 }
 
 main div{
-    background-color: lightgray;
+    background-color: rgba(11, 127, 243, 0.1);
     margin: 20px;
     border-radius: 5px;
 }
@@ -136,6 +139,8 @@ main div{
     transition: 0.3s;
     width: 40%;
     flex-wrap: wrap;
+    background-color: rgba(11, 127, 243, 0.1);
+
 
   }
   
@@ -147,6 +152,24 @@ main div{
     padding: 2px 16px;
     overflow: hidden;
   }
+
+  address{
+      height: 200px;
+      width: 400px;
+
+  }
+
+  address li{
+      display:flex;
+      flex-direction: column;
+      
+  }
+  address a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 22px;
+    
+}
 
 
 
