@@ -1,192 +1,181 @@
-html{
+html {
+  height: 100%;
+  width: 100%;
+}
 
-    height: 100%;
-    width: 100%;
-  }
-
-  /* ===header=== */
+/* ===header=== */
 
 header {
-    position: fixed;
-    width: 98%;
-
+  width: 98%;
 }
 
 /* === This block of code makes the header container div === */
-.head-wrapper{
-    display: flex;
+.head-wrapper {
+  display: flex;
 }
 
 /* === Child div of he head-wrapper === */
-.box-1{
-    flex: 1;
-    justify-content: center;
-    margin-top: 2%;
-    height: auto;
-    width: 70%;
-
+.box-1 {
+  flex: 1;
+  justify-content: center;
+  margin-top: 2%;
+  height: auto;
+  width: 70%;
 }
-.box-1 img{
-    margin-left: auto;
-    height: 168px;
-    border-radius: 10px;
-    
+.box-1 img {
+  margin-left: auto;
+  height: 168px;
+  border-radius: 10px;
 }
 
-.box-2{
-    flex: 1;
-    height: 180px; 
-    
+.box-2 {
+  flex: 1;
+  height: 180px;
 }
 
-.box-3{
-    flex: 1;
-    height: 180px;
+.box-3 {
+  flex: 1;
+  height: 180px;
 }
 
-.box-3 img{
-    margin-top: 100px;
-    margin-left: 150px;    
+.box-3 img {
+  margin-top: 100px;
+  margin-left: 150px;
 }
 
-.header-nav{
-    background-color:   #042B50;
- 
+.header-nav {
+    background-color: #042b50;
+}
+
+.menu-sticker{
+    position: sticky;
+    top: 0;
 }
 
 .header-nav li {
-    display: inline-block;
-    margin-right: 10%;
-    list-style: none;
-    border: 1px;
-    padding: 10px;
+  display: inline-block;
+  margin-right: 10%;
+  list-style: none;
+  border: 1px;
+  padding: 10px;
 }
 
 .header-nav li a {
-    text-decoration: none;
-    font-size: 23px;
-    font-weight: 200;
-    padding: 5px;
-    color: aliceblue;
-    
+  text-decoration: none;
+  font-size: 23px;
+  font-weight: 200;
+  padding: 5px;
+  color: aliceblue;
 }
 .header-nav li a:hover {
-    background-color: #196FA0;
-
-    
+  background-color: #196fa0;
 }
 /* === header up from here === */
 
 /* === body === */
 
+.body-container {
 
-.body-container{
-    margin-top: 355px;
     display: flex;
-    flex-direction: column; 
+  flex-direction: column;
 }
 
-.body-container div{
-    height: 100px;
-    text-overflow: inherit;
-    background-color: rgba(11, 127, 243, 0.3);
-    overflow-wrap: normal;
-    margin: 5px;;
-
+.body-container div {
+  height: 100px;
+  text-overflow: inherit;
+  background-color: rgba(11, 127, 243, 0.3);
+  overflow-wrap: normal;
+  margin: 5px;
 }
 
 /* this css is for skills.html */
 
-main{
-    margin-top: 20%;
-    display: flex;
-    flex-wrap: wrap;
+main {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.card img
-{
-    height: 150px;
-    width: 150px;
-    margin: auto;
+.card img {
+  height: 150px;
+  width: 150px;
+  margin: auto;
 }
 
-main div{
-    background-color: rgba(11, 127, 243, 0.1);
-    margin: 10px;
-    border-radius: 5px;
-
+main div {
+  background-color: rgba(11, 127, 243, 0.1);
+  margin: 10px;
+  border-radius: 5px;
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 30%;
-    flex-wrap: wrap;
-    background-color: rgba(11, 127, 243, 0.1);
-    align-content: center;
-  }
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 30%;
+  flex-wrap: wrap;
+  background-color: rgba(11, 127, 243, 0.1);
+  align-content: center;
+}
 
-  .card-image{
-      text-align: center;
+.card-image {
+  text-align: center;
+}
 
-      
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
 
-  }
-  
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  
-  .card-label {
-    padding: 2px 16px;
-    overflow: hidden;
-    text-align:center;
-  }
+.card-label {
+  padding: 2px 16px;
+  overflow: hidden;
+  text-align: center;
+}
 
-/* this css is for skills.html */
+/* ======================= SKILLS ======================= */
+
+/* ======================= PROJECT======================= */
+.project-main-page{
+    height: auto;
+    width: 98%;
+}
+
+.box{
+    height: 300px;
+    width: 100%;
+}
+/* ======================= PROJECT======================= */
 
 /* === CONTACT HTML CONTACT HTML CONTACT HTML CONTACT HTML CONTACT HTML CONTACT HTML====== */
 
-.form-body h1{
-    color: darkcyan;
+.form-body h1 {
+  color: darkcyan;
 }
 
-.form-body label{
-    display: flex;
-    padding: 5px;
-    margin: 5px;
-
+.form-body label {
+  display: flex;
+  padding: 5px;
+  margin: 5px;
 }
 
-.form-body form input{
-    display: flex;
-    padding: 5px;
-    margin: 5px;
+.form-body form input {
+  display: flex;
+  padding: 5px;
+  margin: 5px;
 }
 /* === CONTACT HTML CONTACT HTML CONTACT HTML CONTACT HTML CONTACT HTML CONTACT HTML=== */
 
-
 /* === footer=== */
 
-footer{
-
-    background-color: lightblue;
-    height: 125px;
-    width: 100%;
+footer {
+  background-color: lightblue;
+  height: 125px;
+  width: 100%;
 }
 
 footer li {
-    display: inline-block;
-    margin: 3%;
-       
-    
+  display: inline-block;
+  margin: 3%;
 }
 
-footer a{
-    text-decoration: none;
-  
+footer a {
+  text-decoration: none;
 }
-
-
-
-
