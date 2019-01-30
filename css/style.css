@@ -6,7 +6,9 @@ html {
 /* ===header=== */
 
 header {
-  width: 98%;
+  background-color: #cfe0e8;
+    width: 100%;
+    height: auto;
 }
 
 /* === This block of code makes the header container div === */
@@ -17,13 +19,9 @@ header {
 /* === Child div of he head-wrapper === */
 .box-1 {
   flex: 1;
-  justify-content: center;
-  margin-top: 2%;
-  height: auto;
-  width: 70%;
+  text-align: center;
 }
 .box-1 img {
-  margin-left: auto;
   height: 168px;
   border-radius: 10px;
 }
@@ -36,20 +34,19 @@ header {
 .box-3 {
   flex: 1;
   height: 180px;
+  display: flex;
+  align-items: center;
+
 }
 
-.box-3 img {
-  margin-top: 100px;
-  margin-left: 150px;
-}
 
 .header-nav {
-    background-color: #042b50;
+  background-color: #77a8a8;
 }
 
-.menu-sticker{
-    position: sticky;
-    top: 0;
+.menu-sticker {
+  position: sticky;
+  top: 0;
 }
 
 .header-nav li {
@@ -64,26 +61,26 @@ header {
   text-decoration: none;
   font-size: 23px;
   font-weight: 200;
-  padding: 5px;
+  padding: 11px;
   color: aliceblue;
 }
 .header-nav li a:hover {
-  background-color: #196fa0;
+  background-color: #b7d7e8;
 }
 /* === header up from here === */
 
 /* === body === */
 
 .body-container {
-
-    display: flex;
+  display: flex;
   flex-direction: column;
+  background-color: #87bdd8;
 }
 
 .body-container div {
   height: 100px;
   text-overflow: inherit;
-  background-color: rgba(11, 127, 243, 0.3);
+  background-color: #daebe8;
   overflow-wrap: normal;
   margin: 5px;
 }
@@ -112,7 +109,7 @@ main div {
   transition: 0.3s;
   width: 30%;
   flex-wrap: wrap;
-  background-color: rgba(11, 127, 243, 0.1);
+  background-color: aliceblue;
   align-content: center;
 }
 
@@ -133,20 +130,20 @@ main div {
 /* ======================= SKILLS ======================= */
 
 /* ======================= PROJECT======================= */
-.project-main-page{
-    height: auto;
-    width: 98%;
+.project-main-page {
+  height: auto;
+  width: 98%;
 }
 
-.box{
-    height: 300px;
-    width: 100%;
+.box {
+  height: 300px;
+  width: 100%;
 }
 /* ======================= PROJECT======================= */
 
 /* === CONTACT HTML CONTACT HTML CONTACT HTML CONTACT HTML CONTACT HTML CONTACT HTML====== */
 
-.form-body h1 {
+/* .form-body h1 {
   color: darkcyan;
 }
 
@@ -160,13 +157,19 @@ main div {
   display: flex;
   padding: 5px;
   margin: 5px;
+} */
+
+fieldset{
+    display: inline-block;
+    flex-direction: row;
+
 }
 /* === CONTACT HTML CONTACT HTML CONTACT HTML CONTACT HTML CONTACT HTML CONTACT HTML=== */
 
 /* === footer=== */
 
 footer {
-  background-color: lightblue;
+  background-color: #c8c3cc;
   height: 125px;
   width: 100%;
 }
