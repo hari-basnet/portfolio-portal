@@ -71,19 +71,56 @@ header {
 
 /* === body === */
 
-.body-container {
-  display: flex;
-  flex-direction: column;
-  background-color: #87bdd8;
+.index-banner{
+  width: 100%;
+  height: 100vh;
+  background-image: url('../assets/images/sai-kiran.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
 }
 
-.body-container div {
-  height: 100px;
-  text-overflow: inherit;
-  background-color: #daebe8;
-  overflow-wrap: normal;
-  margin: 5px;
+.index-banner-caption{
+  background-color: transparent;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 55px;
+  text-shadow: #333;
+  margin: 225px auto;
 }
+
+.white-banner{
+  width: 100%;
+  height: 100vh;
+}
+
+.white-banner-caption{
+  background-color: transparent;
+  text-align: center;
+  color: #000000;
+  font-size: 55px;
+  text-shadow:4px #333;
+  
+  margin: 225px auto;
+}
+.black-banner{
+  width: 100%;
+  height: 100vh;
+  background-color: #333;
+  text-align: center;
+}
+
+.black-banner-caption{
+  background-color: transparent;
+  text-align: center;
+  color: white;
+  font-size: 55px;
+  text-shadow:4px #333;
+  
+  margin: 225px auto;
+}
+
+
 
 /* this css is for skills.html */
 
@@ -130,40 +167,52 @@ main div {
 /* ======================= SKILLS ======================= */
 
 /* ======================= PROJECT======================= */
-.project-main-page {
-  height: auto;
-  width: 98%;
+.project-section{
+  width: 100%;
+  height: 100vh;
 }
 
-.box {
-  height: 300px;
-  width: 100%;
-}
 /* ======================= PROJECT======================= */
 
 /* === CONTACT HTML CONTACT HTML CONTACT HTML CONTACT HTML CONTACT HTML CONTACT HTML====== */
 
-/* .form-body h1 {
-  color: darkcyan;
+form{
+  width: 100%;
+  height: 150vh;
+  
+}
+span{
+  margin-right:100px;
+}
+ form fieldset label{
+  display: inline-block;
+  height: 15px;
+  width: 30%;
+  padding: 10px;
+  margin-right: 30px;
 }
 
-.form-body label {
-  display: flex;
-  padding: 5px;
-  margin: 5px;
+
+form fieldset input{
+  height: 10px;
+  width: 40%;
+  padding: 10px;
+
+} 
+.frm-btn{
+  background-color: lightseagreen;
+  height: 50px;
+  width: 400px;
+  margin-left: 455px;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+.text-space-area{
+  width: 491px;
+  height: 200px;
+  margin: 2px 0;
 }
 
-.form-body form input {
-  display: flex;
-  padding: 5px;
-  margin: 5px;
-} */
-
-fieldset{
-    display: inline-block;
-    flex-direction: row;
-
-}
 /* === CONTACT HTML CONTACT HTML CONTACT HTML CONTACT HTML CONTACT HTML CONTACT HTML=== */
 
 /* === footer=== */
