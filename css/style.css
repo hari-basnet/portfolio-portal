@@ -1,3 +1,8 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 html {
   height: 100%;
   width: 100%;
@@ -6,42 +11,47 @@ html {
 /* ===header=== */
 
 header {
-  background-color: #cfe0e8;
-    width: 100%;
-    height: auto;
+  height: 30vh;
+  width: 100%;
 }
 
-/* === This block of code makes the header container div === */
 .head-wrapper {
   display: flex;
 }
 
-/* === Child div of he head-wrapper === */
 .box-1 {
   flex: 1;
   text-align: center;
+  justify-content: center;
 }
-.box-1 img {
-  height: 168px;
-  border-radius: 10px;
+
+.box-1 img{
+  height: auto;
+  max-width: 100%;
+  border-radius: 5%;
+  margin: 5px;
 }
+
 
 .box-2 {
   flex: 1;
-  height: 180px;
+  text-align: center;
 }
 
 .box-3 {
   flex: 1;
-  height: 180px;
   display: flex;
-  align-items: center;
-
+  text-align: center;
+  justify-content: center;
 }
-
+.box-3 img {
+  height: 90px;
+  max-width:100%;
+  margin-top: 15px;  
+  }
 
 .header-nav {
-  background-color: #77a8a8;
+  background-color: #4267B1;
 }
 
 .menu-sticker {
@@ -67,9 +77,9 @@ header {
 .header-nav li a:hover {
   background-color: #b7d7e8;
 }
-/* === header up from here === */
+/* =================== header END ====================== */
 
-/* === body === */
+/* =================== Index body STARTS ===================== */
 
 .index-banner{
   width: 100%;
@@ -78,15 +88,19 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+  margin-top: 1%;
 }
 
 .index-banner-caption{
+
   background-color: transparent;
   text-align: center;
   color: whitesmoke;
   font-size: 55px;
-  text-shadow: #333;
-  margin: 225px auto;
+  margin: 150px auto;
+
+
+
 }
 
 .white-banner{
@@ -101,7 +115,7 @@ header {
   font-size: 55px;
   text-shadow:4px #333;
   
-  margin: 225px auto;
+  margin: 150px auto;
 }
 .black-banner{
   width: 100%;
@@ -122,36 +136,35 @@ header {
 
 
 
-/* this css is for skills.html */
+/* ================== skills STARTS =====================*/
 
 main {
   display: flex;
   flex-wrap: wrap;
 }
 
-.card img {
-  height: 150px;
-  width: 150px;
-  margin: auto;
-}
+
 
 main div {
   background-color: rgba(11, 127, 243, 0.1);
-  margin: 10px;
   border-radius: 5px;
+  margin: 5px;
+  max-width: 200px;
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  width: 30%;
-  flex-wrap: wrap;
-  background-color: aliceblue;
   align-content: center;
+  background-color: aliceblue;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap;
+  transition: 0.3s;
+  max-width: 30%;
 }
 
-.card-image {
-  text-align: center;
+.card img {
+  height: 150px;
+  max-width: 30%;
+  margin: auto;
 }
 
 .card:hover {
@@ -200,7 +213,7 @@ main div {
 
 /* ======================= PROJECT======================= */
 
-/* === CONTACT HTML CONTACT HTML CONTACT HTML CONTACT HTML CONTACT HTML CONTACT HTML====== */
+/* === CONTACT HTML CONTACT HTML CONTACT HTML CONTACT====== */
 
 form{
   width: 100%;
@@ -241,7 +254,7 @@ form fieldset input{
 
 /* === CONTACT HTML CONTACT HTML CONTACT HTML CONTACT HTML CONTACT HTML CONTACT HTML=== */
 
-/* === footer=== */
+/* ========================= footer STARTS =============== */
 
 footer {
   background-color: #c8c3cc;
@@ -275,3 +288,4 @@ footer i{
 .fa-medium{
   color: #2B2C2E;
 }
+/* ============= FOOTER ENDS ======================= */
