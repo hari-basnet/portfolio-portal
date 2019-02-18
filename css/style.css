@@ -4,14 +4,17 @@
   padding: 0;
 }
 html {
-  height: 100%;
-  width: 100%;
+  width: 100vw;
+}
+
+body{
+  font-size: 62.5%;
 }
 
 /* ===header=== */
 
 header {
-  height: 30vh;
+  height: 20vh;
   width: 100%;
 }
 
@@ -21,21 +24,21 @@ header {
 
 .box-1 {
   flex: 1;
-  text-align: center;
-  justify-content: center;
+  background: url(../assets/images/myLogo.png) no-repeat;
+  background-position: center;
 }
-
-.box-1 img{
-  height: auto;
-  max-width: 100%;
-  border-radius: 5%;
-  margin: 5px;
-}
-
 
 .box-2 {
   flex: 1;
+  justify-content: center;
   text-align: center;
+  margin: 10px auto;
+}
+.box-2 h1{
+  font-size: 3rem;
+}
+.box-2 h2{
+  font-size: 1rem;
 }
 
 .box-3 {
@@ -50,45 +53,45 @@ header {
   margin-top: 15px;  
   }
 
+  .menu-sticker {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
 .header-nav {
   background-color: #4267B1;
 }
 
-.menu-sticker {
-  position: sticky;
-  top: 0;
-}
 
 .header-nav li {
+  border-right: 2px solid rgb(30, 80, 172);  
   display: inline-block;
-  margin-right: 10%;
-  list-style: none;
-  border: 1px;
   padding: 10px;
+
 }
 
 .header-nav li a {
   text-decoration: none;
   font-size: 23px;
   font-weight: 200;
-  padding: 11px;
+  padding: 40px 40px;
   color: aliceblue;
 }
-.header-nav li a:hover {
-  background-color: #b7d7e8;
+.header-nav li:hover {
+  background-color: #f5c275;
 }
 /* =================== header END ====================== */
 
 /* =================== Index body STARTS ===================== */
 
 .index-banner{
-  width: 100%;
   height: 100vh;
-  background-image: url('../assets/images/sai-kiran.jpg');
+  width: 100vw;
+  background-image: linear-gradient(#0000005e,#000000), url('../assets/images/DSC_8744.JPG') ;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed; 
   text-align: center;
-  margin-top: 1%;
 }
 
 .index-banner-caption{
@@ -97,10 +100,7 @@ header {
   text-align: center;
   color: whitesmoke;
   font-size: 55px;
-  margin: 150px auto;
-
-
-
+  margin: 1px auto;
 }
 
 .white-banner{
@@ -119,7 +119,7 @@ header {
 }
 .black-banner{
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: #333;
   text-align: center;
 }
@@ -139,33 +139,37 @@ header {
 /* ================== skills STARTS =====================*/
 
 main {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-
-
-main div {
-  background-color: rgba(11, 127, 243, 0.1);
-  border-radius: 5px;
-  margin: 5px;
-  max-width: 200px;
+  width: 100vw;
 }
 
 .card {
   align-content: center;
-  background-color: aliceblue;
+  justify-content: center;
+  background-color: rgba(11, 127, 243, 0.1);
+  border-radius: 5px;
+  margin: 5px;
+  width: 20%;
+  height: auto;
+  max-width: 150px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  flex-wrap: wrap;
   transition: 0.3s;
-  max-width: 30%;
+}
+.javascript-card{
+  justify-content: flex-end;
 }
 
-.card img {
+.card-image {
   height: 150px;
-  max-width: 30%;
-  margin: auto;
-}
+  max-width: 150px;
+  text-align: center;
+  justify-content: center;
+
+  }
+
+  .card-image img{
+    height: auto;
+    max-width: 90%;
+  }
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -175,11 +179,12 @@ main div {
   padding: 2px 16px;
   overflow: hidden;
   text-align: center;
+  background-color: rgba(11, 127, 243, 0.1);
 }
 
-/* ======================= SKILLS ======================= */
+/* ======================= SKILLS  END======================= */
 
-/* ======================= PROJECT======================= */
+/* ======================= PROJECT STARTS======================= */
 .project-section{
   width: 100%;
   height: 60vh;
@@ -196,7 +201,7 @@ main div {
   height: 100vh;
   background-size:contain;
   position: sticky;
-  z-index: 1;
+  z-index: 0;
   top: ;
 }
 .fix-image1 img{
@@ -208,7 +213,7 @@ main div {
   width: 100%;
   height: 100vh;
   background-color: #1778B5;
-  z-index: 99;
+  z-index: 0;
 }
 
 /* ======================= PROJECT======================= */
@@ -218,36 +223,37 @@ main div {
 form{
   width: 100%;
   height: 150vh;
+  margin-top: 10px;
   
 }
-span{
-  margin-right:100px;
-}
+
  form fieldset label{
   display: inline-block;
   height: 15px;
-  width: 30%;
+  width: 35%;
   padding: 10px;
   margin-right: 5px;
 }
 
 
 form fieldset input{
+  display: inline-block;
   height: 10px;
   width: 35%;
   padding: 10px;
-
+  margin-left: 5px;
 } 
 .frm-btn{
-  background-color: lightseagreen;
+  background-color: lightgreen;
   height: 50px;
   width: 400px;
   margin-left: 455px;
   text-transform: uppercase;
   font-size: 24px;
+  border-radius: 5%;
 }
 .text-space-area{
-  width: 491px;
+  max-width: 491px;
   height: 200px;
   margin: 2px 0;
 }
@@ -289,3 +295,129 @@ footer i{
   color: #2B2C2E;
 }
 /* ============= FOOTER ENDS ======================= */
+
+/* ================== TImeline starts ============== */
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 0;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 0;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
